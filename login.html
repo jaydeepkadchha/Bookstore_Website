@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Login - BookReBoot</title>
+  <link rel="icon" href="assets/img/logo5.png">
+
+  <!-- Fonts & Bootstrap -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .login-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 80px;
+      background-color: #1e4356;
+    }
+
+    .login-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+
+    .login-header h2 {
+      color: #001f3f;
+      font-weight: 600;
+    }
+
+    .form-control:focus {
+      border-color: #001f3f;
+      box-shadow: 0 0 0 0.2rem rgba(0, 31, 63, 0.25);
+    }
+
+    .btn-login {
+      background-color: #001f3f;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+
+    .btn-login:hover {
+      background-color: #003366;
+    }
+
+    .forgot-password {
+      color: #001f3f;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .signup-link {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    #loginMsg {
+      margin-top: 10px;
+      font-weight: bold;
+      color: red;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top mt-4">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.php" class="logo d-flex align-items-center">
+        <img src="assets/img/logo5.png" alt="" class="img-fluid rounded-5">
+        <h1 class="sitename">BookReBoot</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.php" class="active">Home</a></li>
+          <li><a href="about.php">About us</a></li>
+          <li class="dropdown"><a href="#"><span>Books</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="fiction.php">Fiction</a></li>
+              <li><a href="Nonfiction.php">Non-Fiction</a></li>
+              <li><a href="children.php">Children</a></li>
+              <li><a href="comics.php">Comics</a></li>
+              <li><a href="manga.php">Manga</a></li>
+            </ul>
+          </li>
+          <li><a href="bestseller.php">Best Seller</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
+          <li><a href="addtocart.php">Cart</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li><a href="sign.php">Sign Up</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Form -->
+  <main class="main">
+    <section class="login-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="login-card">
+              <div class="login-header text-center">
+                <h2>Welcome In BookReBoot !</h2>
+                <p class="text-muted">Please login to your account</p>
+              </div>
+
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="username" class="form-label">User Name</label>
+                  <input type="text" name="username" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <div class="g-recaptcha" data-sitekey="6LdzTWUrAAAAAAQwA949DQQ386Ino2AibiDhDImJ"></div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="remember">
+                    <label class="form-check-label" for="remember">Remember me</label>
+                  </div>
+                  <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-login w-100">Login</button>
+                <div id="loginMsg"></div>
+
+                <div class="signup-link mt-3">
+                  <span>Don't have an account?</span> <a href="sign.php">Sign up</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <script>
+    $('#loginForm').on('submit', function(e) {
+      e.preventDefault();
+
+      $.ajax({
+        url: 'login_api.php',
+        method: 'POST',
+        data: $(this).serialize(),
+        dataType: 'json',
+        success: function(res) {
+          if (res.status === 'success') {
+            $('#loginMsg').css('color', 'green').text('Login successful! Redirecting...');
+            setTimeout(() => {
+              window.location.href = res.role === 'admin' ? 'admin_index.php' : 'index.php';
+            }, 1000);
+          } else {
+            $('#loginMsg').text(res.message);
+          }
+        },
+        error: function() {
+          $('#loginMsg').text('Server error occurred.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
